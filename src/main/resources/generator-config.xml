@@ -33,7 +33,7 @@
         <!-- 关于生成实体类的设置 -->
         <!-- targetPackage 生成代码的目标目录 -->
         <!-- targetProject 目录所属位置 -->
-        <javaModelGenerator targetPackage="com.jd.demo.entity" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.xx.xx.entity" targetProject="src/main/java">
             <!-- 在targetPackge的基础上根据schema再生成一层package 默认flase -->
             <property name="enableSubPackages" value="true"/>
             <!-- 是否在get方法中 对String类型的字段做空的判断 -->
@@ -45,13 +45,13 @@
         </javaModelGenerator>
 
         <!--关于生成映射文件的设置-->
-        <sqlMapGenerator targetPackage="com.jd.demo.mapper" targetProject="src/main/java">
+        <sqlMapGenerator targetPackage="com.xx.xx.mapper" targetProject="src/main/java">
             <!--同上-->
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
         <!--关于生成mapper层的设置-->
-        <javaClientGenerator type="mapper" targetPackage="com.jd.demo.mapper" targetProject="src/main/java">
+        <javaClientGenerator type="mapper" targetPackage="com.xx.xx.mapper" targetProject="src/main/java">
             <!--同上-->
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
